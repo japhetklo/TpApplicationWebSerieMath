@@ -25,6 +25,7 @@
 		<ul>
 			<li><a href="?action=home">Accueil</a></li>
 			<li><a href="?action=addition">Additionner</a></li>
+			<li><a href="?action=leplusgrandnombre">Le plus grand nombre</a></li>
 		</ul>
 	</div>
 
@@ -56,6 +57,28 @@
 					echo '</form>';
 				}
 				break;
+
+			case'leplusgrandnombre':
+				if(isset($_POST['num1']) && isset($_POST['num2'])){
+					$num1 = $_POST['num1'];
+					$num2 = $_POST['num2'];
+					$resultat = $num1 > $num2;
+					echo"<h2>Le plus grand nombre : $num1</h2>";
+				}
+
+				else{
+					echo '<h2>Le plus grand nombre</h2>';
+					echo '<form method="post">';
+					echo 'Nombre 1: <input type="text" name="num1"><br>';
+					echo 'Nombre 2: <input type="text" name="num2"><br>';
+					echo '<input type="submit" value="Le plus grand nombre">';
+					echo '</form>';
+				}
+				
+				break;
+
+						
+
 			default:
 				echo '<h2>Accueil</h2>';
 				echo '<p>Bienvenue sur la page d\'accueil de mon projet.</p>';
