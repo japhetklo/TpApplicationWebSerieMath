@@ -1,0 +1,33 @@
+#sidebar {
+    float: left;
+    width: 200px;
+  }
+  
+  #sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  #sidebar ul li a {
+    display: block;
+    padding: 5px 10px;
+    background-color: #eee;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #sidebar ul li a:hover {
+    background-color: #ccc;
+  }
+  
+  #content {
+    margin-left: 220px;
+    padding: 170px;
+    border: 1px solid #ccc;
+    min-height: 200px;
+  }
+  
